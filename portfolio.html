@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helical CT - Portfolio | B. Periyanayagam Rozario</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000;
+    }
+    header {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      border-bottom: 4px solid #1b63d0;
+    }
+    header h1 {
+      margin: 5px 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 16px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1b63d0;
+      border-bottom: 2px solid #0b3d91;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background-color: #0b3d91;
+    }
+    .container {
+      width: 85%;
+      margin: 30px auto;
+      background: #f7f9fc;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .tabcontent {
+      display: none;
+    }
+    .active-tab {
+      display: block;
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border: 3px solid #0b3d91;
+      border-radius: 0; /* square */
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    h2 {
+      color: #0b3d91;
+      border-bottom: 2px solid #1b63d0;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    p, ul {
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: justify;
+    }
+    ul {
+      margin-left: 25px;
+    }
+    .image-gallery {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .image-gallery img {
+      width: 300px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    @media (max-width: 700px) {
+      .image-gallery img {
+        width: 90%;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Helical CT - Advanced Medical Imaging System</h1>
+  <p>Portfolio by <strong>B. Periyanayagam Rozario</strong></p>
+</header>
+
+<nav>
+  <a href="#" onclick="openTab(event, 'home')">Home</a>
+  <a href="#" onclick="openTab(event, 'project')">Project Description</a>
+  <a href="#" onclick="openTab(event, 'references')">References</a>
+</nav>
+
+<div class="container">
+
+  <!-- Home Section -->
+  <div id="home" class="tabcontent active-tab">
+    <div class="profile">
+      <img src="photo.jpg" alt="B. Periyanayagam Rozario">
+      <h2>B. Periyanayagam Rozario</h2>
+      <p><strong>Email:</strong> pb7354@srmist.edu.in</p>
+      <p><strong>Contact:</strong> 9790927150</p>
+    </div>
+    <p>
+      Welcome to my academic portfolio on <strong>Helical Computed Tomography (CT)</strong>. 
+      This webpage is created as part of the Advanced Medical Imaging Systems (AMIS) coursework. 
+      It provides a structured overview of the principles, background, instrumentation, and applications of Helical CT. 
+      Helical CT is one of the most advanced imaging technologies used in clinical diagnostics for its ability to perform fast, high-resolution, and three-dimensional imaging. 
+      This portfolio highlights the evolution of CT scanning, its technical advancements, and its vital role in modern medical imaging.
+    </p>
+  </div>
+
+  <!-- Project Description Section -->
+  <div id="project" class="tabcontent">
+    <h2>Introduction</h2>
+    <p>
+      Helical Computed Tomography (CT) is a medical imaging technique that acquires continuous volumetric data as the X-ray tube rotates around the patient while the table moves through the gantry. 
+      This helical movement enables high-speed scanning and accurate 3D image reconstruction. 
+      It is used extensively for diagnosing complex medical conditions such as tumors, vascular diseases, and internal injuries.
+    </p>
+
+    <h2>Background</h2>
+    <p>
+      Helical CT was introduced in the late 1980s after the development of slip-ring technology, which allowed the CT gantry to rotate continuously. 
+      Traditional CT scanners used a “stop-and-shoot” approach, capturing one slice at a time. 
+      Helical CT revolutionized this by enabling continuous data acquisition, reducing scan time, and improving resolution. 
+      The introduction of multi-detector CT (MDCT) further advanced the field by capturing multiple slices per rotation.
+    </p>
+
+    <h2>Working Mechanism</h2>
+    <p>
+      The X-ray tube and detector rotate simultaneously as the patient table moves smoothly through the scanner. 
+      This motion generates helical (spiral) data, reconstructed into detailed cross-sectional or 3D images using algorithms such as filtered back projection and iterative reconstruction. 
+      Continuous scanning minimizes motion artifacts and provides isotropic resolution, enabling accurate anatomical visualization in all planes.
+    </p>
+
+    <h2>Instrumentation</h2>
+    <p>
+      A Helical CT scanner comprises key components such as an X-ray tube, detector array, slip rings for continuous power transmission, a rotating gantry, and a motorized patient table. 
+      Modern scanners incorporate solid-state detectors, automatic exposure control, and high-speed data processors to ensure high-quality imaging with reduced radiation dose.
+    </p>
+
+    <div class="image-gallery">
+      <img src="download.jpeg" alt="CT Head Image">
+      <img src="download (1).jpeg" alt="CT Scanner Diagram">
+      <img src="download (2).jpeg" alt="CT Abdomen Image">
+    </div>
+
+    <h2>Advantages</h2>
+    <ul>
+      <li>Enables fast, continuous scanning and 3D imaging.</li>
+      <li>Minimizes patient movement and motion artifacts.</li>
+      <li>Improves diagnostic precision and comfort.</li>
+      <li>Captures large anatomical regions in seconds.</li>
+    </ul>
+
+    <h2>Applications</h2>
+    <ul>
+      <li>Brain, chest, and abdominal imaging.</li>
+      <li>Detection of tumors, fractures, and vascular diseases.</li>
+      <li>CT angiography and cardiac evaluation.</li>
+      <li>Preoperative planning and radiotherapy guidance.</li>
+    </ul>
+
+    <h2>Future Scope</h2>
+    <p>
+      The future of Helical CT lies in low-dose imaging, photon-counting detectors, and artificial intelligence-based image reconstruction. 
+      AI-assisted Helical CT will improve image clarity, reduce artifacts, and enhance diagnostic speed, paving the way for personalized medical imaging.
+    </p>
+  </div>
+
+  <!-- References Section -->
+  <div id="references" class="tabcontent">
+    <h2>References</h2>
+    <ol>
+      <li>Kalra, M. K., et al. “Computed Tomography Technology: Innovations and Future Directions.” <i>Radiology</i>, 2020.</li>
+      <li>Brink, J. A., & Morin, R. L. “The Evolution of Helical CT: Technology and Applications.” <i>American Journal of Roentgenology</i>, 2019.</li>
+      <li>Radiopaedia.org – <a href="https://radiopaedia.org/articles/helical-ct" target="_blank">Helical CT Overview</a></li>
+      <li>Bushberg, J. T., Seibert, J. A., Leidholdt, E. M. “The Essential Physics of Medical Imaging.” Lippincott Williams & Wilkins, 2012.</li>
+    </ol>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 B. Periyanayagam Rozario | Helical CT Portfolio | SRM Institute of Science and Technology
+</footer>
+
+<script>
+  function openTab(evt, tabName) {
+    var i, tabcontent;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+
+</body>
+</html>
